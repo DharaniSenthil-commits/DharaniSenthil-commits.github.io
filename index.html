@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dharani E S - Portfolio</title>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+   <style>
+     /* Reset */
+     * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
+     body { background:#fff; color:#333; line-height:1.6; scroll-behavior: smooth; }
+     a { text-decoration:none; color:inherit; }
+ 
+     /* Header */
+     header { position:fixed; top:0; left:0; width:100%; background:#fff; border-bottom:1px solid #ddd; z-index:1000; }
+     nav { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; }
+     nav a { margin-left:1.5rem; font-weight:600; color:#555; transition:color 0.3s; }
+     nav a:hover { color:#000; }
+ 
+     /* Hero */
+     .hero { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; text-align:center; padding:0 2rem; background:#f5f5f5; }
+     .hero img { width:150px; height:150px; border-radius:50%; margin-bottom:1rem; border:3px solid #333; }
+     .hero h1 { font-size:2.5rem; margin-bottom:0.5rem; color:#000; }
+     .hero p { font-size:1.2rem; color:#555; max-width:600px; }
+     .btn-primary { display:inline-block; margin-top:1.5rem; padding:0.75rem 1.5rem; background:#333; color:#fff; border-radius:8px; font-weight:600; transition:0.3s; }
+     .btn-primary:hover { background:#000; }
+ 
+     /* Sections */
+     section { padding:6rem 2rem; max-width:1100px; margin:0 auto; }
+     section h2 { text-align:center; font-size:2rem; margin-bottom:2rem; color:#000; border-bottom:2px solid #ddd; display:inline-block; padding-bottom:0.5rem; }
+ 
+     /* About */
+     .about { display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content:center; text-align:center; }
+     .about p { max-width:600px; color:#555; }
+ 
+     /* Experience */
+     .experience { display:flex; flex-direction:column; gap:2rem; }
+     .job { background:#f8f8f8; padding:1rem 1.5rem; border-left:4px solid #333; border-radius:5px; }
+     .job h3 { color:#000; margin-bottom:0.25rem; }
+     .job span { font-size:0.9rem; color:#777; }
+     .job ul { margin-top:0.5rem; padding-left:1rem; color:#555; }
+ 
+     /* Projects */
+     .projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
+     .project { background:#f8f8f8; border-radius:10px; overflow:hidden; transition:transform 0.3s, box-shadow 0.3s; display:flex; flex-direction:column; }
+     .project:hover { transform:translateY(-5px); box-shadow:0 8px 16px rgba(0,0,0,0.15); }
+     .project img { width:100%; display:block; height:auto; }
+     .project-content { padding:0.75rem 1rem; display:flex; flex-direction:column; gap:0.25rem; }
+     .project-content h3 { margin:0; font-size:1.1rem; color:#000; }
+     .project-content p { font-size:0.9rem; color:#555; margin:0; }
+ 
+     /* Skills */
+     .skills { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+     .skill { background:#eee; padding:0.75rem 1rem; border-radius:8px; font-weight:600; color:#333; }
+ 
+     /* Career Development */
+     .career { display:flex; flex-direction:column; gap:1rem; }
+     .career-item { background:#f8f8f8; padding:1rem 1.5rem; border-left:4px solid #333; border-radius:5px; }
+ 
+     /* Contact */
+     .contact-info {
+       background:#f8f8f8;
+       max-width:500px;
+       margin:0 auto;
+       padding:2rem;
+       border-radius:12px;
+       text-align:center;
+       box-shadow:0 5px 15px rgba(0,0,0,0.1);
+     }
+     .contact-info p {
+       font-size:1rem;
+       color:#333;
+       margin:0.5rem 0;
+     }
+     .contact-info a {
+       color:#333;
+       font-weight:600;
+       transition:0.3s;
+     }
+     .contact-info a:hover { color:#000; }
+ 
+     /* Footer */
+     footer { background:#333; color:#fff; text-align:center; padding:2rem; }
+     footer a { margin:0 0.5rem; color:#fff; transition:0.3s; }
+     footer a:hover { color:#ddd; }
+ 
+     @media(max-width:768px){ .about{flex-direction:column;} }
+   </style>
+ </head>
+ <body>
+ 
+   <!-- Header -->
+   <header>
+     <nav>
+       <div class="logo"><strong>Dharani E S</strong></div>
+       <div>
+         <a href="#about">About</a>
+         <a href="#experience">Experience</a>
+         <a href="#projects">Projects</a>
+         <a href="#skills">Skills</a>
+         <a href="#career">Career</a>
+         <a href="#contact">Contact</a>
+       </div>
+     </nav>
+   </header>
+ 
+   <!-- Hero -->
+   <section class="hero">
+     <img src="https://via.placeholder.com/150" alt="Profile Photo">
+     <h1>Hello, I'm Dharani E S</h1>
+     <p>Software Development Engineer | Full-Stack Developer | Data & Cloud Enthusiast</p>
+     <a href="#projects" class="btn-primary">Explore My Work</a>
+   </section>
+ 
+   <!-- About -->
+   <section id="about">
+     <h2>About Me</h2>
+     <div class="about">
+       <p>I am a software engineer with expertise in Go, Python, Java, and cloud technologies (AWS). I specialize in building scalable systems, automating workflows, and creating reliable data pipelines. Passionate about problem-solving and crafting efficient, maintainable code.</p>
+     </div>
+   </section>
+ 
+   <!-- Experience -->
+   <section id="experience">
+     <h2>Experience</h2>
+     <div class="experience">
+       <div class="job">
+         <h3>Software Development Engineer — Recro (Client: Allen)</h3>
+         <span>Jul 2024 – Present</span>
+         <ul>
+           <li>Contributed to Allen, an AI-powered education platform resolving student doubts through intelligent routing and machine learning.</li>
+           <li>Designed and optimized Go for scalable doubt workflows, improving query response times and teacher allocation.</li>
+           <li>Built validation tools (StructComparator, GoldenSet Validator) handling 30K+ requests, enhancing data consistency.</li>
+           <li>Developed Bot Compliance APIs and QC automation panels (Python/Streamlit).</li>
+           <li>Implemented monitoring & metrics systems, automated alerts with Terraform, and fixed production bugs.</li>
+         </ul>
+       </div>
+ 
+       <div class="job">
+         <h3>Software Engineer — HTC Global Services</h3>
+         <span>Aug 2021 – Jan 2024</span>
+         <ul>
+           <li>Enhanced Spring Boot applications by optimizing JdbcTemplate queries for performance.</li>
+           <li>Migrated enterprise data from IBM Cloud → AWS S3 with checksum-based validation.</li>
+           <li>Built serverless ETL pipelines (AWS Lambda + Python), reducing manual intervention.</li>
+           <li>Automated infrastructure provisioning with Terraform.</li>
+         </ul>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Projects -->
+   <section id="projects">
+     <h2>Projects</h2>
+     <div class="projects">
+       <div class="project">
+         <img src="https://via.placeholder.com/400x150" alt="Breast Cancer Classification">
+         <div class="project-content">
+           <h3>Breast Cancer Classification</h3>
+           <p>Built medical classification system using ML algorithms and big data techniques for tumor prediction.</p>
+         </div>
+       </div>
+       <div class="project">
+         <img src="https://via.placeholder.com/400x150" alt="Library Management System">
+         <div class="project-content">
+           <h3>Library Management System</h3>
+           <p>Web-based application automating library operations with JSP frontend and MySQL backend.</p>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Skills -->
+   <section id="skills">
+     <h2>Technical Skills</h2>
+     <div class="skills">
+       <div class="skill">Go</div>
+       <div class="skill">Java (Spring Boot)</div>
+       <div class="skill">Python (Streamlit)</div>
+       <div class="skill">SQL</div>
+       <div class="skill">AWS (S3, Lambda, Glue, Redshift, CloudWatch)</div>
+       <div class="skill">Terraform</div>
+       <div class="skill">CI/CD</div>
+       <div class="skill">ETL Pipelines</div>
+       <div class="skill">Data Migration & Validation</div>
+       <div class="skill">DS & Algorithms</div>
+     </div>
+   </section>
+ 
+   <!-- Career Development -->
+   <section id="career">
+     <h2>Career Development</h2>
+     <div class="career">
+       <div class="career-item">
+         <strong>Software Developer (DS & Algorithms)</strong> — Scalar Academy, Nov 2022 – Present
+       </div>
+       <div class="career-item">
+         <strong>AWS & DevOps Training</strong> — SLA Institute, Dec 2020 – Aug 2021
+       </div>
+     </div>
+   </section>
+ 
+   <!-- Contact -->
+   <section id="contact">
+     <h2>Contact Me</h2>
+     <div class="contact-info">
+       <p><strong>Email:</strong> <a href="mailto:dharanieastsenthilkumar@gmail.com">dharanieastsenthilkumar@gmail.com</a></p>
+       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dharani-east-senthilkumar-394059204/" target="_blank">linkedin.com/in/dharani</a></p>
+       <p><strong>GitHub:</strong> <a href="https://github.com/DharaniSenthil-commits" target="_blank">github.com/dharani</a></p>
+     </div>
+   </section>
+ 
+   <!-- Footer -->
+   <footer>
+     <p><p>Stay curious, keep coding! ✨</p></p>
+   </footer>
+ 
+ </body>
+ </html>
